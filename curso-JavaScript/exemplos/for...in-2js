@@ -1,0 +1,18 @@
+// SINTAXE PARA PESQUISAR DENTRO DE UM OBJETO
+
+let pessoa = {
+    nome: 'Ronald',
+    idade: 30,
+    peso: 65.5,
+}
+
+console.log(`__________`)
+//Formas de acessar a propriedade de um objeto
+    console.log(pessoa['nome']) //cuidado não tem '.' ponto entre o objeto e sua propriedade
+    console.log(pessoa.nome) // agora aqui tem '.' ponto entre o objeto e a sua propriedade
+
+console.log(`__________`)
+    // Para imprimir cada valor de dentro de cada propriedade dentro do array pesquisado
+    for (let i in pessoa) {
+        console.log(pessoa[i])
+    }

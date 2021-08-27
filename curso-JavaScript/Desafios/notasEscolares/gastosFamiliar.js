@@ -1,4 +1,5 @@
 /* SISTEMA DE GASTOS FAMILIAR */
+
 let receitas = [23, 12, 15];
 let despesas = [10, 12, 13];
 var totalReceitas = 0;

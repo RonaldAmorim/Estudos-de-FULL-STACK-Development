@@ -10,7 +10,6 @@ for (const propriedade in pessoa) {
 console.log(`------------------`)
 
 for (const propriedade in pessoa) {
-    // imprime 
     console.log(pessoa['name']) // percorreu três vezes o array por que é quantidade de propriedades que tem nele e imprimeiu o 'name' cada vezes que percorreu.
 }
 console.log(`------------------`)
