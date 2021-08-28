@@ -83,5 +83,24 @@ return
 		Send, {F8}
 		return
 
+; Comentário em HTML
+	<+^;::
+		Sleep 100
+		Send, {SHIFTDOWN},{SHIFTUP}{SHIFTDOWN}1{SHIFTUP}--{Space}{Left}{Space}
+		Send, htmlComment
+		Send, {SHIFTDOWN}{CTRLDOWN}{LEFT}{SHIFTUP}{CTRLUP}
+	return
+; Comentário no CSS
+	^!;::
+		Sleep 100
+		Send, /*
+		Send, {SPACE}
+		Send, */
+		Send, {CTRLDOWN}{LEFT}{CTRLUP}
+		Send, cssComment		
+		Send, {Space}{left}{SHIFTDOWN}{CTRLDOWN}{LEFT}{SHIFTUP}{CTRLUP}
+	return
+	
+
 ; Códigos não utilizados
 	; Send, String(``{SPACE} ; cria uma template string
