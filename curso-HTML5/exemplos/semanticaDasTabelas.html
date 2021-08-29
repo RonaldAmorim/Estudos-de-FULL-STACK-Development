@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica das tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup>
+            <!-- agrupar as colunas -->
+            <col> <!-- refere-se a primeira coluna -->
+            <col span="2" style="background-color:red"> <!-- refere-se a segunda e terceira colunas -->
+            <col span="2" style="background-color:blue"> <!-- refere-se as duas últimas colunas -->
+        </colgroup>
+
+        <thead>
+            <tr>
+                <!-- linha 1 -->
+                <th rowspan="2"></th> <!-- célula A1:A2 vazia -->
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <!-- ocupando duas colunas e que as lojas tem um escope de agrupamento de coluna -->
+                <th colspan="2" scope="colgroup">Antonio Pereira</th> <!-- ocupando duas colunas -->
+            </tr>
+            <tr>
+                <!-- linha 2 -->
+                <!-- esse SCOPE indica que o cabeçalho é o de colunas-->
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th> <!-- esse cabeçalho é um escopo de linha, agrupamento de linhas -->
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
