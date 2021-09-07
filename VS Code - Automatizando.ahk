@@ -93,7 +93,13 @@ return
 		Send, document.getElementById{SHIFTDOWN}9{SHIFTUP}'
 		return
 
-; Inserindo um BOTÃO
+; Inserindo um querySelector
+	^<+q::
+		Send, document.querySelector{SHIFTDOWN}9{SHIFTUP}'
+		Send, elemento{SHIFTDOWN}3{SHIFTUP}seletor
+		Send, {SHIFTDOWN}{CTRLDOWN}{LEFT}{SHIFTUP}{CTRLUP}{SHIFTDOWN}{CTRLDOWN}{LEFT}{SHIFTUP}{CTRLUP}
+		return
+; Inserindo um INPUT BOTÃO
 	^!b::
 		Send, input:sub
 		Sleep, 200
@@ -104,7 +110,7 @@ return
 	 	Send, {TAB}
 		return
 
-; Inserindo um TEXT
+; Inserindo um INPUT TEXT
 	^!t::
 		Send, input:tex
 		Sleep, 200
