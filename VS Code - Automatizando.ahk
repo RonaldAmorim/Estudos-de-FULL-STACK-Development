@@ -150,5 +150,17 @@ return
 		Send, {CTRLDOWN}{ENTER}{CTRLUP} ; pode précopiar a variável objeto da iteração
 		Send, for{SPACE}{SHIFTDOWN}9{SHIFTUP}let{SPACE}i{SPACE}={SPACE}0;{SPACE}i{SPACE}{SHIFTDOWN},{SHIFTUP}{SPACE}x{SPACE}{BACKSPACE};{SPACE}i{SHIFTDOWN}={SHIFTUP}{SHIFTDOWN}={SHIFTUP}{RIGHT}{SPACE}{END}{SHIFTDOWN}[{SHIFTUP}{ENTER}
 		Send, {UP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{CTRLDOWN}{RIGHT}{CTRLUP}{SHIFTDOWN}{LEFT}{SHIFTUP}
+
+; Inserindo uma DIV com ID
+	!d::
+		Send, div
+		Sleep 100
+		Send, {TAB}{LEFT}{SPACE}
+		Sleep 100
+		Send, id
+		Sleep 100
+		Send, {TAB}
+		return
+
 ; Códigos não utilizados
 	; Send, String(``{SPACE} ; cria uma template string
