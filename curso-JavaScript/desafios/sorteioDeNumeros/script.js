@@ -15,6 +15,7 @@ var numAcertados = []
     numSorteados.innerHTML += numeros
 
 // agora vamos pedir ao usuário digiar seis número e guardar em um array para depois comparar com os sorteados
+
 // enviar o número para o array
     numDigitados.push(Number(prompt('Digite o primeiro número'))) // é IMPORTANTE TRANSFORMAR EM NÚMERO
     numDigitados.push(Number(prompt('Digite o segundo número'))) // é IMPORTANTE TRANSFORMAR EM NÚMERO
