@@ -1,0 +1,46 @@
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+figcaption {
+    bottom: 5%;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 400px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+ul {
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+    background-color: blue;
+    color: white;
+    border: 1px solid #000;
+}
+
+li {
+    float: left;
+    line-height: 35px;
+    font-size: 0.9em;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+li:first-child {
+    border-left: none;
+}
+
+li:last-child {
+    border-right: none;
+}

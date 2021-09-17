@@ -1,0 +1,36 @@
+.flexbox {
+    background-color: antiquewhite;
+    display: flex;
+    height: 60px;
+    width: 200px;
+}
+
+.box {
+    color: #fff;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.one {
+    background-color: #8820dd;
+
+}
+
+.two {
+    background-color: #2bb15a;
+}
+
+.three {
+    background-color: #755322;
+}
+
+.four {
+    background-color: #02a3a3;
+}
+.five {
+    background-color: #c6363d;
+}

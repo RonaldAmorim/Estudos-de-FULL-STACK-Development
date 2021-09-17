@@ -1,0 +1,26 @@
+h1 {
+    background-color: #fff;
+    color: gray;
+    padding: 10px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.status {
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 10px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.failed {
+    background-color: #bd2c00;
+}
+
+.shipped {
+    background-color: #6cc644;
+}
+
+.processing {
+    background-color: #fc9800;
+}

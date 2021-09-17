@@ -1,0 +1,35 @@
+div {
+    background-color: black;
+    width: 50px;
+    height: 10px;
+    padding: 20px 50px;
+}
+
+.cloud {
+    background-color: #fff;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    width: 48px;
+    position: relative;
+}
+
+.cloud::before, .cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+
+.cloud::after {
+    background-color: white;
+    height: 23px;
+    left: 7px;
+    right: auto;
+    top: -10px;
+    width: 23px;
+}

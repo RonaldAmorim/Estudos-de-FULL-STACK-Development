@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'IconicFill';
+    src: url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-next::after {
+    content: '\2192';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+    color: blue;
+}
+
+.icon-ok::before {
+    content: '\2714';
+    font-family: 'iconic_fill';
+    margin-right: 10px;
+}
+
+.icon-invalid {
+    color: #990000;
+}
+.icon-invalid::before {
+    content: "\2718";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+
+.tnt {
+    border-radius: 50%;
+    border: 5px solid black;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.counter {
+    background-color: black;
+    border-top-left-radius: 25px 10px;
+    border-top-right-radius: 25px 10px;
+    color: white;
+    display: block;
+    font-size: 1.7em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center ;
+    width: 50px;
+    
+}

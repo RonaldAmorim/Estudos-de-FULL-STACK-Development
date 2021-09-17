@@ -1,0 +1,67 @@
+div {
+    font-weight: bold;
+    height: 50px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+    width: 220px;
+}
+
+.blue {
+    background-image: linear-gradient(top, #4377fa, #0537b7);   
+    background-color: #4377fa;
+    box-shadow: 3px 3px 5px #0537b7 inset;
+}
+
+.reverse-blue {
+    background-image: linear-gradient(top, #0537b7, #4377fa);
+    background-color: #0537b7;
+    box-shadow: -3px -3px 5px #f2a31c;
+}
+
+.omg-pink {
+    background-image: linear-gradient(top right, #fc0050, #ff79a3);
+    background-color: #fc0050;
+    box-shadow: 3px -6px 3px #f5b951;
+}
+
+.stops:hover {
+    background-image: -webkit-linear-gradient(top, #f5b951 48%, #f2a31c 56%);
+    background-color: #f5b951;
+    box-shadow: -3px 3px 5px #0537b7 inset;
+}
+
+input:focus {
+    border-color: #0537b7;
+    box-shadow: 0px 0px 5px #0537b7 ;
+    outline: none;
+}
+
+.nav {
+    background-color: #b9522d;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+    
+}
+
+.nav li {
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 70px;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav .current {
+    background-color: #a64a28;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
