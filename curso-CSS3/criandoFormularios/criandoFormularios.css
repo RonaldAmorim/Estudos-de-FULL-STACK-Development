@@ -1,0 +1,104 @@
+form {
+    display: grid;
+    width: 300px;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    box-shadow: inset 2px 2px 2px #eee;
+    font-size: .9em;
+    padding: 2px 5px;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+#enviar {
+    width: 50%;
+    align-items: ;
+}
+
+.hint {
+    background-color: #fffbe4;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: .8em;
+    margin-left: 20px;
+    padding: 3px;
+    display: none;
+}
+
+input:hover+.hint,
+textarea:hover+.hint {
+    display: flex;
+}
+
+.error {
+    color: red;
+    display: block;
+    font-size: .8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+}
+
+.form2 label {
+    display: none;
+}
+
+.form2 input {
+    display: block;
+
+    border-radius: 0px 10px 0 0;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.form2 input[type='password'] {
+    border-radius: 0 0 0px 10px;
+    border-top: none;
+    font-weight: bold;
+}
+
+.form2 input[type='text'] {
+    border-bottom: none;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+::-webkit-input-placeholder {
+    color: blue;
+}
+
+::-moz-placeholder {
+    color: blue;
+}
+
+.form2 button {
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(top, #fff, #e5e5e5);
+    border: 1px solid #aaa;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-color: #204569;
+    text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form2 button:hover {
+    background-image: -webkit-linear-gradient(top, #e5e5e5, #fff);
+    border-color: yellow;
+    text-shadow: -2px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form2 button:active {
+    margin-top: 2px;
+    margin-left: 2px;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="criandoFormularios.css">
+    <title>Criando formulários</title>
+</head>
+
+<body>
+    <section style="background-color: bisque;">
+        <h1>Formulário 1</h1>
+        <form action="">
+            <label for="email">E-mail</label>
+            <input type="email" name="" id="">
+            <span class="hint">por exemplo: seunome@dominio.com</span>
+            <span class="error">Preencha corretamente o e-mail</span>
+    
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto">
+            <span class="hint">Nos diga o que vc precisa!</span>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <span class="hint">Escreva aqui sua mensagem.</span>
+            
+            <input id="enviar" type="button" value="Enviar mensagem">
+        </form>
+    </section>
+
+    <section class="form2" style="background-color: aquamarine;">
+        <h1>Formulário 2</h1>
+        <form action="" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" name="username" id="username" placeholder="Usuário">
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" placeholder="Senha">
+            <button>Entrar no site</button>
+        </form>
+    </section>
+
+    <script src="criandoFormularios.js"></script>
+
+
+</body>
+
+</html>

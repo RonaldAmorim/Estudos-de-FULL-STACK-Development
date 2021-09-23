@@ -14,7 +14,7 @@ return
 ; para inserir um <CONSOLE.LOG> TECLAS: INSERT
 	INS::
 		Sleep 500
-		Send, console.log{SHIFTDOWN}9{SHIFTUP}
+		SendInput, console.log(
 		Sleep 100
 		Send, {SHIFTDOWN}´{SHIFTUP}
 		Sleep 100
@@ -26,7 +26,7 @@ return
 		Sleep 500
 		Send, {CTRLDOWN}x{CTRLUP}
 		Sleep 50
-		Send, console.log{SHIFTDOWN}9{SHIFTUP}
+		SendInput, console.log(
 		Sleep 50
 		Send, {SHIFTDOWN}´{SHIFTUP}
 		Sleep 50
